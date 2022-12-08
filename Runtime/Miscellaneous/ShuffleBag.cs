@@ -2,9 +2,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class ShuffleBag<T> : IList<T> 
+public class ShuffleBag<T> : IList<T>
 {
-    private readonly List<T> _data = new();
+    private readonly List<T> _data = new List<T>();
     
     private int _cursor = 0;
     private T _last;
